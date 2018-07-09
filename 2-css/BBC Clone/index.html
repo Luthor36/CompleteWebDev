@@ -55,7 +55,7 @@
                 float: left;
                 background-color: #BB1919;
                 width: 1500px;
-                margin: 0px;
+                margin: 0px auto;
                 height: 55px;
                 padding: 30px, 50px;
             }
@@ -65,13 +65,48 @@
                 font-size: 300%;
                 position: relative;
                 top: 13px;
+                margin: 0px auto;
             }
             #submenu{
                 float: left;
                 background-color: #a91717;
-                width: 1500px;
+                width: 2000px;
                 margin: 0px;
                 height: 40px;
+                color:  white;
+            }
+            .submenu-section{
+                float: left;
+                border-left: 1px #bb4545 solid;
+                height: 50%;
+            }
+            #more-button{
+                margin-top: 11px;
+                margin-bottom: 11px;
+                margin-right: 8px;
+            }
+            #arrow{
+                float: right;
+                right: -18px;
+                top: -1px;
+                margin-right: 8px;
+            }
+            #search-box{
+                background-color: #E4E4E4;
+                border: none;
+                font-weight: bold;
+                color: black;
+                padding: 5px;
+                margin: 7px;
+                margin-left: 8px;
+                margin-right: 0px;
+                float: left;
+            }
+            #magnifying-glass{
+                margin:7px;
+                margin-left: 0px;
+                height: 25px;
+                
             }
         </style>
     </head>
@@ -122,8 +157,18 @@
             </div>
             <div class="topbar-section">
                 
+                <span class="menu-button">More</span>
+                <span class="menu-button" id="arrow"><img src="images/more-arrow.PNG"/></span>
+                
+                
             </div>
             <div class="topbar-section">
+                
+            </div>
+            <div class="topbar-section">
+                
+                <input id="search-box" type="text" value="Search" placeholder="Search" background-color="e4e4e4">
+                <input type="image" id="magnifying-glass" src="images/magnifying-glass.PNG">
                 
             </div>
         </div>
@@ -133,8 +178,67 @@
         
         </div>
         <div id="submenu">
-        
+            
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Home
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Video
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    World
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    US & Canada
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    UK
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Business
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Tech
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Science
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Stories
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Entertainment & Arts
+                </div>
+            </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    Health
+                </div>
+            <div class="submenu-section">
+                <div class="submenu-button">
+                    More
+                </div>
+            </div>            
         </div>
-             
+        </div>         
     </body>
 </html>
