@@ -13,24 +13,27 @@
                 
                 width: 1000px;
                 margin: 0px auto;
-                height: 39px;
+                height: 40px;
+                padding: 0;
             }
-            #logo{
+            #topbar #logo{
                 margin: 8px auto;
                 float: left;
                 margin-right: 8px
+                
             }
-            #signin-div{
+            #topbar #signin-div{
                 margin-right: 12px;
+                margin-bottom: 0;
             }
-            #signin-image{
+            #topbar #signin-image{
                 width: 21px;
                 margin: 11px;8px;
                 margin-right: 10px;
                 margin-left: 14px;
                 float: left;
             }
-            #signin-text{
+            #topbar #signin-text{
                 float: left;
                 font-weight: bold;
                 font-size: 80%;
@@ -38,7 +41,7 @@
                 top: 13px;
                 margin-right: 65px;
             }
-            .menu-button{
+            #topbar .menu-button{
                 font-weight: bold;
                 font-size: 80%;
                 position: relative;
@@ -46,52 +49,28 @@
                 padding: 12px 12px;
                 
             }
-            .topbar-section{
+            #topbar .topbar-section{
                 float: left;
                 border-left: 1px #cccccc solid;
                 height: 100%;
+                margin: 0;
             }
-            #news-header{
-                float: left;
-                background-color: #BB1919;
-                width: 1500px;
-                margin: 0px auto;
-                height: 55px;
-                padding: 30px, 50px;
+            .clear{
+                clear:both;
             }
-            #news-text{
-                color: white;
-                font-weight: bold;
-                font-size: 300%;
-                position: relative;
-                top: 13px;
-                margin: 0px auto;
-            }
-            #submenu{
-                float: left;
-                background-color: #a91717;
-                width: 2000px;
-                margin: 0px;
-                height: 40px;
-                color:  white;
-            }
-            .submenu-section{
-                float: left;
-                border-left: 1px #bb4545 solid;
-                height: 50%;
-            }
-            #more-button{
+           
+            #topbar #more-button{
                 margin-top: 11px;
                 margin-bottom: 11px;
                 margin-right: 8px;
             }
-            #arrow{
+            #topbar #arrow{
                 float: right;
                 right: -18px;
                 top: -1px;
                 margin-right: 8px;
             }
-            #search-box{
+            #topbar #search-box{
                 background-color: #E4E4E4;
                 border: none;
                 font-weight: bold;
@@ -102,11 +81,68 @@
                 margin-right: 0px;
                 float: left;
             }
-            #magnifying-glass{
+            #topbar #magnifying-glass{
                 margin:7px;
                 margin-left: 0px;
                 height: 25px;
                 
+            }
+             #menu-bar-container{
+                float: left;
+                background-color: #BB1919;
+                width: 100%;
+                height: 55px;
+                padding: 30px, 50px;
+                border-top: 1px solid #CCCCCC;
+                margin: 0 auto;
+            }
+            #menu-bar-container #menu-bar{
+                width: 1000px;
+                margin: 0 auto;
+            }
+            #menu-bar-container #news-text{
+                color: white;
+                padding: 0;
+                margin: 0;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 10px;
+            }
+            #submenu-container{
+                float: left;
+                background-color: #BB1919;
+                width: 100%;
+                margin: 0 auto;
+                height: 40px;
+                color:  white;
+            }
+            #submenu-container #submenu{
+                width: 1000px;
+                margin: 0 auto;
+                height: 50%;
+                padding-top: 6px;
+            }                
+            #submenu a{
+                color: white;
+                text-decoration: none;
+                padding: 0 10px;
+                position: relative;
+                top: 5px;
+                font-size: 14px;
+                border-right: 1px #bb4545 solid;
+            }
+            #submenu a:hover{
+                text-decoration: underline;
+            }
+            #submenu .no-border{
+                border: none;
+            }
+            #submenu img{
+                padding: 0;
+                margin: 0;
+                position: relative;
+                top: 9px;
+                right: 13px;
             }
         </style>
     </head>
@@ -164,81 +200,49 @@
             </div>
             <div class="topbar-section">
                 
-            </div>
-            <div class="topbar-section">
-                
-                <input id="search-box" type="text" value="Search" placeholder="Search" background-color="e4e4e4">
+                <input id="search-box" type="text" placeholder="Search" background-color="e4e4e4">
                 <input type="image" id="magnifying-glass" src="images/magnifying-glass.PNG">
                 
             </div>
         </div>
-        <div id="news-header">
         
-            <span id="news-text">NEWS</span>
+        <div class="clear"></div>
         
+        <div id="menu-bar-container">
+        
+            <div id="menu-bar">
+            <h1 id="news-text">NEWS</h1>
+            </div>
         </div>
-        <div id="submenu">
+        
+        <div class="clear"></div>
+
+        <div id="submenu-container">
             
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Home
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Video
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    World
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    US & Canada
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    UK
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Business
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Tech
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Science
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Stories
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Entertainment & Arts
-                </div>
-            </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    Health
-                </div>
-            <div class="submenu-section">
-                <div class="submenu-button">
-                    More
-                </div>
-            </div>            
+            <div id="submenu">
+                <a href="">Home</a>
+                <a href="">Video</a>
+                <a href="">World</a>
+                <a href="">US & Canada</a>
+                <a href="">UK</a>
+                <a href="">Business</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Stories</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Health</a>
+             <!--   <a href="">In Pictures</a>
+                <a href="">Reality Check</a>
+                <a href="">World News TV</a>
+                <a href="">Health</a>
+-->
+                <a href="" class="no-border">More</a>
+                <img src="images/submenu-more-arrow.PNG"/>
         </div>
-        </div>         
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="main-article"></div>
     </body>
 </html>
