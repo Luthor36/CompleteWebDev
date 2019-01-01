@@ -9,6 +9,14 @@
                 padding: 0;
                 font-family: Helvetica, Arial, sans-serif;
             }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color: #1167a8;
+                text-decoration: none;
+            }
             #topbar{
                 
                 width: 1000px;
@@ -25,6 +33,9 @@
             #topbar #signin-div{
                 margin-right: 12px;
                 margin-bottom: 0;
+            }
+            #topbar #signin-div:hover{
+                border-bottom-color: #1188BB;
             }
             #topbar #signin-image{
                 width: 21px;
@@ -47,6 +58,10 @@
                 position: relative;
                 top: 13px;
                 padding: 12px 12px;
+                
+            }
+            .menu-button a{
+               color: black;
                 
             }
             #topbar .topbar-section{
@@ -110,7 +125,7 @@
             }
             #submenu-container{
                 float: left;
-                background-color: #BB1919;
+                background-color: #A91717;
                 width: 100%;
                 margin: 0 auto;
                 height: 40px;
@@ -120,8 +135,7 @@
                 width: 1000px;
                 margin: 0 auto;
                 height: 50%;
-                padding-top: 6px;
-            }                
+            }
             #submenu a{
                 color: white;
                 text-decoration: none;
@@ -132,7 +146,8 @@
                 border-right: 1px #bb4545 solid;
             }
             #submenu a:hover{
-                text-decoration: underline;
+                padding-bottom: 6px; 
+                border-bottom: 4px white solid;
             }
             #submenu .no-border{
                 border: none;
@@ -143,6 +158,118 @@
                 position: relative;
                 top: 9px;
                 right: 13px;
+            }
+            #page-container{
+                width: 1000px;
+                margin: 0 auto;
+                
+            }
+            #main-article{
+            }
+            h2{
+                font-weight: normal;
+                margin-top: 20px;
+                font-size: 20px;
+                border-bottom: 2px solid #a91717;
+                width: 105px;
+            }
+            h3 a{
+                color: black;
+                font-size: 30px;
+                
+            }
+            #article-container{
+                float: left;
+                width: 680px;
+                border-right: 1px solid #CCCCCC;
+                padding-right: 10px;
+            }
+            #article-summary{
+                color: #5a5a5a;
+                width: 260px;
+                float: left;
+            }
+            .clock{
+                
+                position: relative;
+                margin-right: 2px;
+                top: -3px;
+                float: left;
+            }
+            .topic-link{
+                
+                text-decoration: none;
+                color: #a91717;
+                border-left: 1px solid #CCCCCC;
+                padding-left: 10px;
+                float: left;
+                
+            }
+            #article-summary a:hover{
+                
+                color: #1167a8;
+                text-decoration: none;
+            }
+            #article-summary .date{
+                padding-right: 10px;
+                float: left;
+            }
+            .date{
+                padding-right: 10px;
+                color: #5a5a5a;
+            }
+            #main-article-image{
+                width: 400px;
+                margin-left: 15px;
+            }
+            #article-hr{
+                
+                border-top: 1px solid #a91717;
+                width: 50px;
+                
+            }
+            .article-link{
+                color: black;
+                text-decoration: none;
+            }
+            
+            #ad-container{
+                margin: 25 auto;
+                width: 750px;
+            }
+            #ad1{
+            }
+            #watch-listen{
+                width: 280px;
+                float: right;
+            }
+            h4{
+                font-weight: normal;
+                font-size: 20px;
+            }
+            .article-side-image {
+                float: left;
+                width: 90px;
+            }
+            .watch-listen-link{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .side-article{
+                float: right;
+                width: 180px;
+                position: relative;
+                top: -15px;
+            }
+            .no-border{
+                border-left: none;
+                padding: none;
+            }
+            .border-right{
+                border-right: 1px solid #CCCCCC;
+
             }
         </style>
     </head>
@@ -160,40 +287,40 @@
             </div>
             <div class="topbar-section">
                 
-                <span class="menu-button">News</span>
+                <span class="menu-button"><a>News</a></span>
 
                 
             </div>
             <div class="topbar-section">
                 
-                <span class="menu-button">Sport</span>
+                <span class="menu-button"><a>Sport</a></span>
 
                 
             </div>
             <div class="topbar-section">
                 
-                <span class="menu-button">Weather</span>
+                <span class="menu-button"><a>Weather</a></span>
 
                 
             </div>
             <div class="topbar-section">
                 
-                <span class="menu-button">Shop</span>
+                <span class="menu-button"><a>Shop</a></span>
                 
             </div>
             <div class="topbar-section">
                 
-                <span class="menu-button">Earth</span>
+                <span class="menu-button"><a>Earth</a></span>
                 
             </div>
             <div class="topbar-section">
                 
-                <span class="menu-button">Travel</span>
+                <span class="menu-button"><a>Travel</a></span>
                 
             </div>
             <div class="topbar-section">
                 
-                <span class="menu-button">More</span>
+                <span class="menu-button"><a>More</a></span>
                 <span class="menu-button" id="arrow"><img src="images/more-arrow.PNG"/></span>
                 
                 
@@ -220,7 +347,7 @@
         <div id="submenu-container">
             
             <div id="submenu">
-                <a href="">Home</a>
+                <a href="" style="padding-left: 0px">Home</a>
                 <a href="">Video</a>
                 <a href="">World</a>
                 <a href="">US & Canada</a>
@@ -243,6 +370,101 @@
         
         <div class="clear"></div>
         
-        <div id="main-article"></div>
+        <div id="page-container">
+        
+            <!--Remove Ad & Form
+
+        <div id="page-container">
+            <div id="ad-container">
+                <a href=""><div id="ad1">
+
+                    <img src="images/ad1.PNG"/>
+
+                </div></a>
+            </div>
+        
+        
+            <div id="main-article">
+                
+                <a href=""><h2>Ex-Trump aide denies being Russian agent</h2></a>
+                <p>Documents show the FBI believed Carter Page was "collaborating and conspiring" with Russia in 2016.</p>
+        
+            </div>
+        </div>
+  -->  
+            
+            <div id="main-article">
+        
+                <h2>Technology</h2>
+                
+                <div id="article-container">
+                
+                <h3><a href="">Asda bug exposed payment details</a></h3>
+                
+                    <div id="article-summary">
+                        
+                        <p>Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.
+                        </p>
+
+                        <p>
+                        <img class="clock" src="images/Clock.PNG"> <span class="date border-right">19 January 2016</span><a class="topic-link no-border" href="">Technology</a>
+                        </p>
+                        
+                        <hr align="left" id="article-hr">
+                        
+                        <p><a class="article-link" href="">Surveillance firm hit in hack attack</a></p>
+                        <p><a class="article-link" href="">ebay flaw has existed for months</a></p>
+                        
+                    </div>
+                    <img id="main-article-image" src="images/ASDA.PNG">
+                </div>
+            </div>
+            <div id="watch-listen">
+                <h4>Watch/Listen</h4>
+                
+                <img class="article-side-image" src="images/watch-listen1.PNG">
+                
+                <div class="side-article">
+                
+                    <p><a class="watch-listen-link" href="">UK science chief backs blockchains</a>
+                    </p>
+
+                    <p>
+                    <img class="clock" src="images/Clock.PNG"> <span class="date">19 January 2016</span>
+                    </p>
+                    
+                </div>
+                
+                <div class="clear"></div>
+                
+                <img class="article-side-image" src="images/watch-listen2.PNG">
+                
+                <div class="side-article">
+                
+                    <p><a class="watch-listen-link" href="">Drone register gives 'accountability'</a>
+                    </p>
+
+                    <p>
+                    <img class="clock" src="images/Clock.PNG"> <span class="date border-right">19 January 2016</span><br><a class="topic-link no-border" href="">Technology</a>
+                    </p>
+                    
+                </div>
+                
+                <div class="clear"></div>
+                
+                <img class="article-side-image" src="images/watch-listen3.PNG">
+                
+                <div class="side-article">
+                
+                    <p><a class="watch-listen-link" href="">SpaceX rocket explodes during landing</a>
+                    </p>
+
+                    <p>
+                    <img class="clock" src="images/Clock.PNG"> <span class="date border-right">19 January 2016</span><br><a class="topic-link no-border" href="">Science & Environment</a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
     </body>
 </html>
